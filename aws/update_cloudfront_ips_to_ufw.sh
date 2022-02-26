@@ -16,7 +16,7 @@ diff ${old} ${new} | while read i j ; do
     ;;
    "<" )
     echo ${j} to be removed
-    ufw delete allow from "$i" to any app "Apache Secure"
+    ufw delete allow from "$j" to any app "Apache Secure"
     ;;
   esac
 done
